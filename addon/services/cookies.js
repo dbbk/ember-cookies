@@ -99,6 +99,7 @@ export default Service.extend({
   },
 
   _writeFastBootCookie(name, value, options = {}) {
+    return;
     let responseHeaders = this.get('_fastBoot.response.headers');
     let serializedCookie = this._serializeCookie(...arguments);
 
